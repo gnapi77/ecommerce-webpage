@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG E-COMMERACE-WEBSITE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company h2 {
+    margin: 0;
+}
+
+.Products ul {
+    display: flex;
+}
+
+.Products ul li {
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.Products ul li:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.banner-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e8f5e9; /* Light green background */
+    padding: 20px;
+}
+
+.banner-section .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.section-title:hover {
+    color: #4CAF50; /* Green on hover */
+    border-color: #4CAF50; /* Green border on hover */
+}
+
+.category-section, .arrival-section {
+    padding: 20px;
+}
+
+.category-section ul, .arrival-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-section ul li, .arrival-section ul li {
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-section ul li:hover, .arrival-section ul li:hover {
+    transform: scale(1.1);
+}
+
+.category-section ul li img, .arrival-section ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category-section ul li span, .arrival-section ul li span {
+    display: block;
+    color: #666;
+}
+
+.banner-2 {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffebee; /* Light red background */
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.discount-section:hover {
+    background-color: #ffcdd2; /* Darker red background on hover */
+}
+
+.discount-section img {
+    width: 220px;
+    height: 200px;
+    margin: 12px;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount-section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b71c1c; /* Dark red color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 10px;
+}
+
+.discount-section h2:hover {
+    color: #c62828; /* Darker red on hover */
+    border-color: #c62828; /* Darker red border on hover */
+}
+
+.footer {
+    width: 100%;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+.Products ul li
+{
+    display: inline-flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.company h2
+{
+    margin-left: 20px;
+}
+
+.Products ul {
+    display: flex;
+}
+
+.Products ul li {
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.Products ul li:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.productdetails {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pro-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-left img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.pro-left img:hover {
+    transform: scale(1.05);
+}
+
+.pro-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.pro-right h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pro-right h4 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.pro-right ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.pro-right h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.pro-right p, .pro-right ul {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.pro-button {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.addbtn, .buybtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.addbtn {
+    background-color: #FF4500; /* OrangeRed */
+    color: #fff;
+}
+
+.addbtn:hover {
+    background-color: #FF6347; /* Tomato */
+    transform: scale(1.05);
+}
+
+.buybtn {
+    background-color: #32CD32; /* LimeGreen */
+    color: #fff;
+}
+
+.buybtn:hover {
+    background-color: #3CB371; /* MediumSeaGreen */
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <div class="navbar">
+            <div class="company">
+                <h2>SG EStore</h2>
+            </div>
+            <div class="Products">
+                <ul>
+                    <li>Soft-Toys</li>
+                    <li>Blocks</li>
+                    <li>Puzzles</li>
+                    <li>Balls</li>
+                    <li>Water Toys</li>
+                    <li>Uni-corn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner-section">
+            <img src="../images/BANNER1.png" alt="banner1"class="banner-img" >
+        </div>
+        <div>
+            <h2><center>New Products</center></h2>
+        </div>
+        <div class="category-section">
+            <ul>
+                <li>
+                    <img src="../images/catogires/balls.png" alt="balls">
+                    <span>Balls</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/dramgon toys.png" alt="dragon">
+                    <span>Dragon Toys</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/blocks.png" alt="block">
+                    <span>Blocks</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/buildblock.png" alt="build">
+                    <span>Blocks</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/colors.png" alt="colors">
+                    <span>Colors</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/hangertoy.png" alt="hangertoy">
+                    <span>Hanger Toys</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/keyy dolls.png" alt="keyy">
+                    <span>Key Dolls</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/softtoy.png" alt="softtoy">
+                    <span>Soft Toys</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/trains.png" alt="trains">
+                    <span>Trains</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/water gun.png" alt="gum">
+                    <span>Water Guns</span>
+                </li>
+                <li>
+                    <img src="../images/catogires/water-toy.png" alt="water">
+                    <span>Water-Toys</span>
+                </li>                
+            </ul>
+        </div>
+        <div><h2><center>NEW ARRIVALS</center></h2></div>
+        <div class="arrival-section">
+            <div class="sub-section">
+                <ul>
+                    <a href="Block.html">
+                        <li>
+                            <img src="../images/Arrivals/blocks.png" alt="">
+                            <span>BLOCKS</span>
+                        </li>
+                    </a>
+                    <a href="colorfulmarbels.html">
+                        <li>
+                            <img src="../images/Arrivals/marbel.png" alt="">
+                            <span>MARBELS</span>
+        
+                        </li>
+                    </a>
+                    <a href="pop-up.html">
+                        <li>
+                            <img src="../images/Arrivals/pop-ups.png" alt="">
+                            <span>POP-UPS</span>
+        
+                        </li>
+                    </a>
+                <li>
+                    <img src="../images/Arrivals/puzzles.png" alt="">
+                    <span>PUZZLES</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/ringandstick.png" alt="">
+                    <span>RING AND STICKS</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/robos.png" alt="">
+                    <span>ROBO</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/softtoys.png" alt="">
+                    <span>SOFT TOYS</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/spinner.png" alt="">
+                    <span>SPINNERS</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/trains.png" alt="">
+                    <span>TRAINS</span>
+                </li>
+                <li>
+                    <img src="../images/Arrivals/ZIGSAW.png" alt="">
+                    <span>ZIGSAW PUZZLES</span>
+                </li>     
+              </ul>
+            </div>
+        </div>
+        <div class="banner-2">
+            <img src="../images/banner-2.png" alt="">
+        </div>
+        <div class="discount-section">
+            <img src="../images/discounts/disc (1).png" alt="">
+            <img src="../images/discounts/disc (2).png" alt="">
+            <img src="../images/discounts/disc (3).png" alt="">
+            <img src="../images/discounts/disc (4).png" alt="">
+            <img src="../images/discounts/disc (5).png" alt="">
+            <img src="../images/discounts/disc (6).png" alt="">
+            <img src="../images/discounts/disc (7).png" alt="">
+            <img src="../images/discounts/disc (8).png" alt="">
+            <img src="../images/discounts/disc (9).png" alt="">
+            <img src="../images/discounts/disc (10).png" alt="">
+            <img src="../images/discounts/disc (11).png" alt="">
+            <img src="../images/discounts/disc (12).png" alt="">
+
+
+        </div>
+        <div class="fotter">
+            <img src="../images/footer.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
